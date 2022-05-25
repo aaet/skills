@@ -6,7 +6,6 @@
         <entryData>
           <resourceRoots>
             <path value="file://$PROJECT_DIR$/skills" />
-            <path value="file://$PROJECT_DIR$" />
           </resourceRoots>
         </entryData>
       </entry>
