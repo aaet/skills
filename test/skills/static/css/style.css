@@ -1,3 +1,6 @@
 body {
     background-color: #ffff;
 }
+.errorlist {
+    color: #ff0000;
+}
