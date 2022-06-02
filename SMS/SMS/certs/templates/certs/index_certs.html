@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ exam_name }}</title>
+</head>
+<body>
+</body>
+<h1>{{ exam_name }}</h1>
+
+{% for item in certs %}
+    <div>
+        <p><h3>{{ item.exam_name}}</h3></p>
+        <p>{{ item.exam_type}}</p>
+        <p>{{ item.desc}}</p>
+        <p>{{ item.created_at|date:"H:i d.m.Y" }}</p>
+        <p>{{ item.updated_at }}</p>
+        <hr>
+    </div>
+
+{% endfor %}
+
+</body>
+</html>
