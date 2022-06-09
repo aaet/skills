@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block title %}
-{{ exam_name }} :: {{ block.super }}
+{{ user }} :: {{ block.super }}
 {% endblock %}
 
 {% block sidebar %}
@@ -12,7 +12,7 @@
 {% for item in certs %}
 <div class="card mb-3">
     <div class="card-header">
-        Сотрудник: <a href="{% url 'user' item.user.pk %}">{{ item.user }}</a>
+        Сотрудник: {{ item.user }}
     </div>
     <div class="card-body">
         <div class="media">

@@ -1,0 +1,11 @@
+{% load certs_tags %}
+<div class="list-group">
+    {% get_users as users %}
+    {% for item in users %}
+    <a href="{% url 'user' item.pk %}" class="list-group-item list-group-item-action">{{ item.user }}</a>
+    {% endfor %}
+</div>
+
+<br>
+
+{% show_users %}
